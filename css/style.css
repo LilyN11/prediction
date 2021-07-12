@@ -1,0 +1,180 @@
+body {
+    /* set margin to 0 and overflow was attempted to make scroll bar */
+    margin: 0;
+    overflow-y: scroll;
+}
+text{
+    font-size: 14px;
+    font-family: "TrebuchetMS", sans-serif;
+}
+.axis,
+.frame {
+    shape-rendering: crispEdges;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #aaa;
+    shape-rendering: crispEdges;
+}
+
+.axis-labels{
+    text-align: center;
+}
+.axis--y path, .axis--y g.tick line{
+    stroke: none;
+}
+
+.axis--y g.tick text{
+    fill: red;
+    font-size: 20px;
+}
+
+.frame {
+    stroke: #aaa;
+    stroke-width: 2;
+    z-index: 10;
+}
+
+.fit {
+    z-index: -10;
+}
+
+.ticks text{
+    font: 10px sans-serif;
+}
+
+.track,
+.track-inset,
+.track-overlay {
+    stroke-linecap: round;
+}
+
+.track {
+    stroke: #000;
+    stroke-opacity: 0.3;
+    stroke-width: 10px;
+}
+
+.track-inset {
+    stroke: #ddd;
+    stroke-width: 8px;
+}
+
+.track-overlay {
+    pointer-events: stroke;
+    stroke-width: 50px;
+    stroke: transparent;
+    cursor: crosshair;
+}
+
+.handle {
+    fill: #fff;
+    stroke: #000;
+    stroke-opacity: 0.5;
+    stroke-width: 1.25px;
+}
+
+.title{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.number{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+#text-link, #text-save{
+    cursor: pointer;
+    fill: blue;
+    text-decoration: underline;
+}
+
+.parameters{
+    font: 12px sans-serif;
+    opacity: 0.5;
+    font-style: italic;
+}
+
+.newbar, .bar{
+    opacity: 0.5;
+    fill: #984ea3;
+}
+
+.plotbar{
+    fill: #222222;
+}
+
+.gameLabel, #gameLabel{
+    text-anchor: middle;
+    font-size: 36px;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) This code was taken from W3school*/
+.modal {
+  
+}
+
+/* Modal Content (image) */
+.modal-content {
+  
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
